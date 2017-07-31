@@ -1,14 +1,18 @@
 // Index.ios.js - place code for iOS. 
  
 import React from 'react';
-import { AppRegistry } from 'react-native';
+import { View, AppRegistry } from 'react-native';
 
 import Header from './src/components/Header';
+import AlbumList from './src/components/AlbumList';
 
 const appName = 'albums';
 const App = () => {
   return (
-    <Header headerText={'Albums'}/>  
+    <View>
+      <Header headerText={'Albums'} />  
+      <AlbumList />
+    </View>
   );
 };
 
