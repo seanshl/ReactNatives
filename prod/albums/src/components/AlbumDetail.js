@@ -8,7 +8,7 @@ const AlbumDetail = ({ album }) => {
 	return (
 		<Card>
 			<CardSection>
-				<View>
+				<View style= {styles.thumbnailContainerStyle}>
 					<Image 
 					style={styles.thumbnailStyle}
 					source={{ uri: thumbnail_image }}/>
@@ -31,6 +31,13 @@ const styles = {
 	thumbnailStyle: {
 		height: 50,
 		width: 50
+	},
+
+	thumbnailContainerStyle: {
+		justifyContent: 'center',
+		alignItems: 'center',
+		marginLeft: 10,
+		marginRight: 10
 	}
 };
 
